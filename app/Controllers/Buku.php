@@ -3,6 +3,11 @@ namespace App\Controllers;
 class Buku extends BaseController
 {
  public function index()
+//  {
+//      return view('tampil_buku');
+//     //  echo ('tampil_buku');
+//  }
+ 
  {
  echo "Halo ini adalah controller Buku <a href='" . 
 route_to('judul') . "'>Link ke routing judul</a>";
@@ -19,4 +24,5 @@ route_to('judul') . "'>Link ke routing judul</a>";
  {
  echo "ini adalah method judulBuku, Judul Buku : $judul";
  }
+
 }
