@@ -55,4 +55,6 @@ Codeigniter 3', 'Belajar PHP dan MySQL',
 //  echo "ini adalah method judulBuku, Judul Buku : $judul";
 //  }
 
+
+
 }

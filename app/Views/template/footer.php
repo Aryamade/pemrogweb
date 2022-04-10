@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>ini adalah bagian  footer</h2>
-</body>
-</html>
+ <footer class="footer mt-auto py-3">
+     <div class="container">
+        <span class="text-muted">UPT Perpustakaan Politeknik Negeri Bali @2020</span>
+    </div>
+</footer>
