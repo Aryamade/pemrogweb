@@ -1,6 +1,6 @@
 <?= $this->extend('buku/buku'); ?>
 <?= $this->section('page'); ?>
-<div class="container w-auto  mt-2">
+<div class="container w-auto mt-5">
 
         <h1 class="text-center">Hola <span class="badge bg-primary"> Selamat Datang</span></h1>
         <br>
