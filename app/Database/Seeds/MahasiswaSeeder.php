@@ -20,6 +20,7 @@ class MahasiswaSeeder extends Seeder
         'created_at' => Time::now()
         ],
         ];
+        
         $this->db->table('tb_mahasiswa')->insertBatch($data);
 
     }
