@@ -31,7 +31,7 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
+// $routes->get('/', 'Home::index');
 
 $routes->get('/judul-buku','Buku::judul',['as' =>'judul']);
 
@@ -51,6 +51,29 @@ $routes->group('admin',function($routes){
 });
 
 $routes->get('data-dosen/(:alpha)/(:num)','Dosen::profilDosen/$1/$2');
+
+$routes->get('/anggota','Anggota::index');
+$routes->get('/anggota/create','Anggota::create');
+$routes->get('/anggota/store','Anggota::store');
+$routes->get('/anggota/edit(:num)','Anggota::edit/$1' );
+$routes->post('/anggota/update/(:num)','Anggota::update/$1');
+$routes->get('/anggota/delete/(:num)','Anggota::delete/$1');
+
+// pegawai
+
+$routes->get('/pegawai','Pegawai::index');
+$routes->get('/pegawai/create','Pegawai::create');
+$routes->get('/pegawai/store','Pegawai::store');
+$routes->get('/Pegawai/edit(:num)','Pegawai::edit/$1' );
+$routes->post('/pegawai/update/(:num)','Pegawai::update/$1');
+$routes->get('/pegawai/delete/(:num)','Pegawai::delete/$1');
+// $routes->group('Abc',function($routes){
+//     $routes->add('Abc', 'Abc\Abc::index');
+//     $routes->add('Bca', 'Abc\Bca::index');
+// });
+
+
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
